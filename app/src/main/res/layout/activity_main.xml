@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="Car Rent Service" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/cars"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Daily Rent"
+        android:id="@+id/dailyRent"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/rentDays"
+        android:text="@string/days"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/seekDays"
+        android:min="1"
+        android:max="20"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver's Age"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/driversAge"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/under20"
+            android:text="Less than 20"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/midAge"
+            android:text="Between 21 and 60"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/above60"
+            android:text="Above 60"/>
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:id="@+id/gps"
+            android:layout_height="wrap_content"
+            android:text="GPS"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/childSeat"
+            android:layout_height="wrap_content"
+            android:text="Child Seat"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:id="@+id/mileage"
+            android:layout_height="wrap_content"
+            android:text="Unlimited Mileage"/>
+
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calculate"
+            android:id="@+id/calculate"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/totalAmount"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:hint="Amount"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/totalAmountWithTax"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Total Payment"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/viewDetails"
+        android:text="View Full Details"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

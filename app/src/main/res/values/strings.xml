@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Car Rent App</string>
+    <string name="days">How many days you want to rent?      %d days</string>
+</resources>
